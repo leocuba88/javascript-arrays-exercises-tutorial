@@ -3,4 +3,6 @@ let counts = {};
 
 // your code here
 
+
+
 console.log(counts);
