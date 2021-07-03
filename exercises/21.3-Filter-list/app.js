@@ -2,4 +2,8 @@ let names = ['Liam','Emma','Noah','Olivia','William','Ava','James','Isabella','L
 
 //declare your function here
 
-console.log(filterByName(names, 'am'));
+
+let filterByName = names.filter(name => name.includes('am'))
+
+//console.log(filterByName(names, 'am'));
+console.log(filterByName);

@@ -10,3 +10,8 @@ let tasks = [
 ];
 
 //your code here
+let removeDone = tasks.filter(function(donetask){
+	return (donetask.done)
+});
+
+console.log(removeDone)
