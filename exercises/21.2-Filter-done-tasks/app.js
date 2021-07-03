@@ -6,12 +6,23 @@ let tasks = [
 	{ label: 'Replit the finishes', done: true },
 	{ label: 'Ask for a raise', done: false },
 	{ label: 'Read a book', done: true },
-	{ label: 'Make a trip', done: false }
+	{ label: 'Make a trip', done: true }
 ];
 
 //your code here
-let removeDone = tasks.filter(function(donetask){
-	return (donetask.done)
-});
+let isDoneTask = function(task){
+	return (task.done)
+}
+
+let isTaskNotDone = function(task){
+	return (!task.done)
+}
+
+let isLabelMake = function(task){
+	return (task.label.indexOf("Make") >= 0)
+}
+
+let removeDone = tasks.filter(isLabelMake).filter(isDoneTask);
+
 
 console.log(removeDone)

@@ -2,8 +2,10 @@ let names = ['Liam','Emma','Noah','Olivia','William','Ava','James','Isabella','L
 
 //declare your function here
 
+let filterByName = (arr, filterDesire) => {
+    let nameIncludesFilterDesire = (name) => name.toLowerCase().includes(filterDesire)
+    var result = arr.filter(nameIncludesFilterDesire)
+    return result;
+}
 
-let filterByName = names.filter(name => name.includes('am'))
-
-//console.log(filterByName(names, 'am'));
-console.log(filterByName);
+console.log(filterByName(names, 'am'));
